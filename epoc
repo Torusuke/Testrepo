@@ -1,0 +1,17 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.swing.JOptionPane;
+
+public class epoctest {
+
+	public static void main(String[]args){
+		
+	long inputepoc=Long.parseLong(JOptionPane.showInputDialog("input epoc time"));
+	SimpleDateFormat epoc=new SimpleDateFormat("yyyy/MM/dd/kk:mm:ss");
+	System.out.println(epoc.format(new Date(inputepoc*1000)));
+	
+	
+	}
+	
+}
